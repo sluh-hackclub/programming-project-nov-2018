@@ -13,7 +13,7 @@ router.get('/scores', (req, res, next) => {
   // const r3 = randomBetween(1, max - 1 - r1 - r2);
   // const r4 = max - r1 - r2 - r3;
   const scores = [];
-  const numPeople = randomBetween(1, 10);
+  const numPeople = randomBetween(4, 10);
   for (let i = 0; i < numPeople; i++) {
     scores[i] = {
       name: firstNames[randomBetween(0, firstNames.length)],
